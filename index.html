@@ -16,6 +16,10 @@
         font-family: "title";
         src: url("NotoSans-ExtraBold.ttf");
       }
+      @font-face {
+        font-family: "light";
+        src: url("NotoSans-Medium.ttf");
+      }
       body {
         height: 100%;
       }
@@ -67,14 +71,65 @@
         float: right;
         width: 50%;
       }
+      .container-fluid {
+        padding: 0px;
+      }
       .pic img {
         height: calc(100vh - 76px);
-        margin: 0px;
         float: right;
       }
       .text {
         float: left;
         width: 50%;
+        padding: 10% 0% 15% 10%;
+        text-align: center;
+      }
+      .text h1 {
+        color: black;
+        font-size: 80px;
+        font-family: "title";
+      }
+      .text h3 {
+        font-family: "light";
+        font-size: 25px;
+      }
+      .strip {
+        background-color: white;
+        padding-top: 50px;
+        height: 50vh;
+        text-align: center;
+      }
+      .card{
+        border-radius: 4px;
+        margin: 5px;
+        background: #fff;
+        box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+        transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+        padding: 2px;
+        cursor: pointer;
+      }
+      .card:hover{
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+      }
+      .list {
+        text-align: center;
+        padding: 50px 15px 20px 15px;
+        background-color: #E198AB;
+        color: white;
+        height: 100vh;
+      }
+      .shopnow {
+        width: 250px;
+        height: 60px;
+        font-size: 30px;
+        background-color: #F7B2CE;
+      }
+      .shopnow:hover {
+        background-color: #F2A1B0;
+      }
+      .shopnow:active {
+        background-color: #E198AB;
       }
   </style>
 </head>
@@ -130,7 +185,7 @@
               <a class="nav-link" aria-current="page" href="#"></a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
+          <form class="d-flex" role="search" style="padding-right: 20px;">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-primary" type="submit">Search</button>
           </form>
@@ -139,14 +194,59 @@
     </nav>
   <div class="container-fluid title">
     <div class="text">
-      <h1>Are </h1>
-      <h3>add description</h3>
-      <button>Shop Now</button>
+      <h1>Travel in style, wherever you go.</h1><br><br>
+      <h3>Pack everything you need to make the best of your travels in our bags. 
+        From recording equipment and clothes to souvenirs and essentials,
+        we have space for you.</h3><br><br>
+      <button class="btn btn-primary shopnow">Shop Now</button>
     </div>
     <div class="pic">
       <img src="main.jpg" >
     </div>
   </div>
-
+  <div class="container-fluid strip">
+    <h2>Featured in </h2>
+  </div>
+  <div class="list">
+    <h2>Yes, we have everything. The choice is yours.</h2>
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Backpacks</h5>
+          <img class="card-img-top" src="5.jpg" alt="Card image cap">
+          <a href="#" class="btn btn-primary">Click here</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Hardsided luggage</h5>
+          <img class="card-img-top" src="3.jpg" alt="Card image cap">
+          <a href="#" class="btn btn-primary">Click here</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Purses</h5>
+          <img class="card-img-top" src="img1.jpg" alt="Card image cap">
+          <a href="#" class="btn btn-primary">Click here</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Duffel bags</h5>
+          <img class="card-img-top" src="img2.jpg" alt="Card image cap">
+          <a href="#" class="btn btn-primary">Click here</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
