@@ -19,14 +19,6 @@
       body {
         height: 100%;
       }
-      .background {
-        position: fixed; 
-        top: 0; 
-        left: 0; 
-        min-width: 100vw;
-        max-height: 100vh;
-        z-index: -1;
-      }
       #logo {
         max-height: 50px;
         margin-left: 10px;
@@ -45,36 +37,45 @@
       .btn-primary:active {
         background-color: #5D2A42;
       }
+      .nav-item .nav-link{
+        margin-right: 20px;
+        font-family: "regular";
+        color: white;
+      }
+      .nav-item .nav-link:hover{
+        color: pink;
+      }
+      .nav-item .nav-link:active{
+        color: palevioletred;
+      }
+      .dropdown-item {
+        color: black;
+      }
+      .dropdown-item:hover{
+        background-color: #eccfcd;
+      }
+      .background {
+        max-width: 200px;
+      }
       .title {
         width: 50%;
         text-align: right;
         float: right;
         padding: 20px;
         margin-top: 50px;
+        display: inline;
       }
       .title h1 {
         font-size: 130px;
         letter-spacing: 2px;
         font-family: "title";
-        background: linear-gradient(-37deg, #FFDCCC 39%, #5D2A42 40%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
       }
       .title h4 {
         font-family: "regular";
         font-size: 20px;
         color: white;
       }
-      .nav-item .nav-link{
-        margin-right: 20px;
-        font-family: "regular";
-      }
-      .nav-item a{
-        color: white;
-      }
-      .dropdown-item:hover{
-        background-color: #FFDCCC;
-      }
+      
   </style>
 </head>
 <body>
@@ -136,10 +137,13 @@
         </div>
       </div>
     </nav>
-  <img src="bg.jpg" class="background" alt="">
+  <img src="main.jpg" class="background" alt="">
   <div class="container title">
       <h1>Bronx Luggage</h1><br><br>
       <h4>Carry yourself with style and comfort</h4>
+  </div>
+  <div class="container tab">
+
   </div>
 </body>
 </html>
