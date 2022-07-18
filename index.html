@@ -58,24 +58,19 @@
         max-width: 200px;
       }
       .title {
-        width: 50%;
-        text-align: right;
+        background-color: #FFF0E9;
+        width: 100%;
+        display: inline-block;
+        height: calc();
+      }
+      .img {
         float: right;
-        padding: 20px;
-        margin-top: 50px;
-        display: inline;
+        width: 50%;
       }
-      .title h1 {
-        font-size: 130px;
-        letter-spacing: 2px;
-        font-family: "title";
+      .text {
+        float: left;
+        width: 50%;
       }
-      .title h4 {
-        font-family: "regular";
-        font-size: 20px;
-        color: white;
-      }
-      
   </style>
 </head>
 <body>
@@ -137,13 +132,15 @@
         </div>
       </div>
     </nav>
-  <img src="main.jpg" class="background" alt="">
-  <div class="container title">
-      <h1>Bronx Luggage</h1><br><br>
-      <h4>Carry yourself with style and comfort</h4>
+  <div class="container-fluid title">
+    <div class="text">
+      <h1>Take everything your need to build the best travel experience in our bags.</h1>
+      <h3>add description</h3>
+    </div>
+    <div class="img">
+      <img src="main.jpg" class="img">
+    </div>
   </div>
-  <div class="container tab">
 
-  </div>
 </body>
 </html>
